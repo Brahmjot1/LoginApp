@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRegister"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Email"
+        android:background="#30ffffff"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawablePadding="8dp"
+        android:id="@+id/txtEmailR"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/txtEmailR"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:hint="Password"
+        android:background="#30ffffff"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawablePadding="8dp"
+        android:id="@+id/txtPasswordR"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D51757"
+        android:text="Register"
+        android:layout_below="@+id/txtPasswordR"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:id="@+id/btnRegister"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGotoSigin"
+        android:text="Go To SignIn"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@id/btnRegister"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>
